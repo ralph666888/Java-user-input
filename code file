@@ -1,13 +1,15 @@
 import javax.swing.*;
 import java.util.*;
-public class sdd {
+public class sdd { //clase name doesn't tell me anything
     public static void main(String[] args) {
 
 
+        //make it a .java file 
+
         Scanner input = new Scanner(System.in);
         System.out.print("Enter employee's name:");
-        String name=input.next();
-        Scanner input1 = new Scanner(System.in);
+        String name = input.next(); //always put spaces
+        Scanner input1 = new Scanner(System.in); //what is input1-4
         System.out.print("Enter number of hours worked in a week:");
         int numberhour=input.nextInt();
         Scanner input2 = new Scanner(System.in);
@@ -20,10 +22,11 @@ public class sdd {
         System.out.print("Enter state tax withholding rate:");
         double withouthold=input4.nextDouble();
         System.out.println("\n");
-        System.out.println("Employee Name:" +name);
-        System.out.println("Hours Worked:"+numberhour);
-        System.out.println("Pay Rate:"+hourrate);
-
+        System.out.println("Employee Name:" + name);
+        System.out.println("Hours Worked:" + numberhour);
+        System.out.println("Pay Rate:" + hourrate);
+        //all non-final vars should be in camel case.
+        //hourrate->hourRate
     }
 
 }
