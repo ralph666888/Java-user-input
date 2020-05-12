@@ -1,26 +1,26 @@
 import javax.swing.*;
 import java.util.*;
-public class sdd { //clase name doesn't tell me anything
+public class userinputtest { //clase name doesn't tell me anything
     public static void main(String[] args) {
 
 
         //make it a .java file 
 
-        Scanner input = new Scanner(System.in);
+       Scanner input = new Scanner(System.in);
         System.out.print("Enter employee's name:");
         String name = input.next(); //always put spaces
-        Scanner input1 = new Scanner(System.in); //what is input1-4
+
         System.out.print("Enter number of hours worked in a week:");
-        int numberhour=input.nextInt();
-        Scanner input2 = new Scanner(System.in);
+        int numberhour = input.nextInt();
+
         System.out.print("Enter hourly pay rate:");
-        double hourrate=input.nextDouble();
-        Scanner input3 = new Scanner(System.in);
+        double hourrate = input.nextDouble();
+
         System.out.print("Enter federal tax withholding rate:");
-        double without=input3.nextDouble();
-        Scanner input4 = new Scanner(System.in);
+        double without = input.nextDouble();
+
         System.out.print("Enter state tax withholding rate:");
-        double withouthold=input4.nextDouble();
+        double withouthold = input.nextDouble();
         System.out.println("\n");
         System.out.println("Employee Name:" + name);
         System.out.println("Hours Worked:" + numberhour);
