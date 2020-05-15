@@ -1,0 +1,12 @@
+public class Ascll {
+    public static void main(String[] args) {
+        final int NUMBER_OF_LINE = 10;
+
+        for (int i = 33; i <= 126; i++) {
+            if(i%10 == 0){
+                System.out.println("\n");
+            }
+            System.out.print((char)i+" ");
+        }
+    }
+}
