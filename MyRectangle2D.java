@@ -2,14 +2,18 @@ import java.util.*;
 public class MyRectangle2D {
    private double x;
    private double y;
-   private double width = 1;
+   private double width = 1; ///not how you do default values
    private double height = 1;
-   public MyRectangle2D(){};
-   public MyRectangle2D(double x1,double y1,double width1,double height1){
-       this.x = x1;
-       this.y = y1;
-       this.width = width1;
-       this.height = height1;
+   public MyRectangle2D(){}; //search up default contructor
+   public MyRectangle2D(double x, double y,double width,double height){
+       this.x = x;
+       this.y = y; //this.x isn't the same variable as x
+       this.width = width;
+       this.height = height;
+   }
+
+   public MyRectangle2D(double width, double height){
+       this(1, 1, width, height);
    }
    public void setX(double x2){
        this.x=x2;
@@ -56,7 +60,7 @@ public class MyRectangle2D {
    public boolean overlaps(MyRectangle2D r){
        if(Math.abs(r.x-x)>0.5*(r.width+width)||Math.abs(r.y-y)>0.5*(r.height+height)){
            return false;
-       }
+       } //keep brackets consistant
        else{
            return true;
        }
