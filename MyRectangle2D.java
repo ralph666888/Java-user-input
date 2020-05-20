@@ -15,26 +15,26 @@ public class MyRectangle2D {
    public MyRectangle2D(double width, double height){
        this(1, 1, width, height);
    }
-   public void setX(double x2){
-       this.x = x2;
+   public void setX(double x){
+       this.x = x;
    }
    public double getX(){
        return x;
    }
-   public void setY(double y2){
-        this.y = y2;
+   public void setY(double y){
+        this.y = y;
    }
    public double getY(){
         return y;
    }
-    public void setWidth(double width2){
-        this.width = width2;
+    public void setWidth(double width){
+        this.width = width;
    }
     public double getWidth(){
         return width;
    }
-    public void setHeight(double height2){
-        this.height = height2;
+    public void setHeight(double height){
+        this.height = height;
    }
     public double getHeight(){
         return height;
@@ -45,8 +45,8 @@ public class MyRectangle2D {
    public double getPerimeter(){
        return 2*(width+height);
    }
-   public boolean contains(double x3, double y3){
-       if(Math.abs(x3-x) <= 0.5*width && Math.abs(y3-y) <= 0.5*height)
+   public boolean contains(double x, double y){
+       if(Math.abs(this.x-x) <= 0.5*width && Math.abs(this.y-y) <= 0.5*height)
            return true;
        else
            return false;
