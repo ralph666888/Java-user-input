@@ -40,25 +40,25 @@ public class MyRectangle2D {
         return height;
    }
    public double getArea(){
-       return width*height;
+       return width * height;
    }
    public double getPerimeter(){
        return 2*(width+height);
    }
    public boolean contains(double x, double y){
-       if(Math.abs(this.x-x) <= 0.5*width && Math.abs(this.y-y) <= 0.5*height)
+       if(Math.abs(this.x - x) < = 0.5 * width && Math.abs(this.y - y) < = 0.5 * height)
            return true;
        else
            return false;
    }
    public boolean contains(MyRectangle2D r){
-       if(Math.abs(r.getX()-x)+0.5*r.getWidth() <= 0.5*width && Math.abs(r.getY()-y)+0.5*r.getHeight() <= 0.5*height)
+       if(Math.abs(r.getX() - x)+0.5 * r.getWidth() < = 0.5*width && Math.abs(r.getY()-y) + 0.5 * r.getHeight() < = 0.5 * height)
            return true;
        else
            return false;
    }
    public boolean overlaps(MyRectangle2D r){
-       if(Math.abs(r.x-x)>0.5*(r.width+width)||Math.abs(r.y-y)>0.5*(r.height+height))
+       if(Math.abs(r.x - x) > 0.5 * (r.width + width) || Math.abs(r.y - y) > 0.5*(r.height + height))
            return false;
         //keep brackets consistant
        else
