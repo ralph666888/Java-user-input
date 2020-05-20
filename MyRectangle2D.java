@@ -2,9 +2,9 @@ import java.util.*;
 public class MyRectangle2D {
    private double x;
    private double y;
-   private double width; ///not how you do default values
+   private double width; 
    private double height;
-   public MyRectangle2D(){}; //search up default contructor
+  
    public MyRectangle2D(double x, double y,double width,double height){
        this.x = x;
        this.y = y; //this.x isn't the same variable as x
