@@ -18,6 +18,7 @@ public class StringSplit {
 
         for(String i:split(s,"#")){
             System.out.println(i);
+            System.out.println(i+1);
        }
             System.out.Ptintln("hello");
     }
